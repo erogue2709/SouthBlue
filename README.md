@@ -1,8 +1,11 @@
 # SouthBlue
 Projet final de développement web N3 2020
 
-Ilhem Ounes           @
+Ilhem Ounes
+@Ilhembdf
 
-Antoine Roziere       @Aroz0
+Antoine Roziere
+@Aroz0
 
-Maxence Decourriere   @erogue2709
+Maxence Decourriere
+@erogue2709
