@@ -23,7 +23,8 @@ body {
 }
 
 header {
-    width: 427px; /* Les headers et sections occupent 916px (taille de la bannière) */
+    /*width: 427px; /* Les headers et sections occupent 916px (taille de la bannière) */
+    widht: 100%;
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: column; /* Les éléments sont empilés */
 }
@@ -40,25 +41,25 @@ nav ul {
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: row; /* Les éléments sont mis côte à côte */
     justify-content: space-between; /* Les éléments sont répartis équitablement */
-    background-color: black; /* Couleur du fond */
+    background-color: #D3D3D3; /* Couleur du fond */
 }
 nav ul li {
     display: flex; /* Ce conteneur est "flexible" */
     justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
     list-style-type: none; /* Cette liste n'a pas de puce */
-    font-size: x-large; /* Le texte est grossi en XL */
+    /*font-size: x-large; /* Le texte est grossi en XL */
     flex-grow: 1; /* L'espace occupé est élargie */
 }
 
 nav ul li a {
     padding: 10px; /* Marge intérieure */
-    color: white; /* Couleur du texte */
+    color: #007FFF; /* Couleur du texte */
 }
 nav ul li:hover {
-    background-color:#9a330a; /* Couleur du fond au passage de la souris */
+    background-color: #C0C0C0; /* Couleur du fond au passage de la souris */
 }
 section {
-    width: 916px; /* Les sections occupent 916px (taille de la bannière) */
+    width: 90%; /* Les sections occupent 916px (taille de la bannière) */
 }
 
 #principal {
