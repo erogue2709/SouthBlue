@@ -23,8 +23,6 @@ body {
 }
 
 header {
-    /*width: 427px; /* Les headers et sections occupent 916px (taille de la bannière) */
-    widht: 100%;
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: column; /* Les éléments sont empilés */
 }
@@ -38,10 +36,6 @@ header {
 }
 
 .image img {
-    display: none;
-}
-
-nav input {
     display: none;
 }
 
@@ -66,9 +60,20 @@ nav ul li a {
 nav ul li:hover {
     background-color: #C0C0C0; /* Couleur du fond au passage de la souris */
 }
-section {
-    width: 90%; /* Les sections occupent 916px (taille de la bannière) */
+
+nav input {
+    display: none;
 }
+
+section {
+    width: 80%;
+}
+
+
+
+
+
+
 
 #principal {
     margin-top: 10px; /* Marge supérieure */
@@ -76,11 +81,7 @@ section {
     flex-direction: row; /* Les éléments sont mis côte à côte */
     text-align: justify; /* Alignement du texte : justifié */
 }
-#principal article {
-    flex: 1; /* Écriture raccourcie : 
-                flex-grow: 1 et flex-shrink:1 = Chaque élément occupe l'espace idéal 
-                (le + et le - à la fois) */
-}
+
 #principal article img {
     float: left; /* Mise en élément "flottant" contre lequel on peut venir se poser */
     margin-right: 10px; /* Marge de droite */
@@ -159,12 +160,10 @@ footer {
 }
 
 footer p {
-    font-size: large; /* Le texte est grossi en L */
+    font-size: small;
 }
 
-footer a{
-    color: inherit; /* Couleur du lien identique à celle du conteneur */
-}
+
 
 /* Smartphone */
 @media screen and (max-width:768px) {
