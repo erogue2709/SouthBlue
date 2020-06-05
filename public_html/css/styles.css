@@ -29,10 +29,22 @@ header {
     flex-direction: column; /* Les éléments sont empilés */
 }
 
-picture {
-    display: flex;
+/*
+.resize{
+    widht: 960;
+    height: 452;
 }
+.resize img{
+    widht: 100%;
+    height: auto; 
+}
+*/
 
+picture{
+    display: flex;
+    widht: 960;
+    height: auto; 
+}
 nav input {
     display: none;
 }
