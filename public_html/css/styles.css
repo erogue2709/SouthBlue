@@ -29,21 +29,18 @@ header {
     flex-direction: column; /* Les éléments sont empilés */
 }
 
-/*
-.resize{
-    widht: 960;
-    height: 452;
+/*on redimensionne la banniere*/
+.image {
+background-size: cover;
+width: 960px;
+height: 300px;
 }
-.resize img{
-    widht: 100%;
-    height: auto; 
+.image img {
+display: none;
 }
-*/
 
 picture{
     display: flex;
-    widht: 960;
-    height: auto; 
 }
 nav input {
     display: none;
