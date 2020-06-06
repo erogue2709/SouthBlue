@@ -20,6 +20,7 @@ body {
     flex-direction: column; /* Les éléments sont empilés */
     align-items: center; /* Les éléments portés sont centrés à la verticale */
     width: 100%; /* La page occupe toute la largeur */
+    background-color: #D3D3D3;
 }
 
 header {
@@ -67,9 +68,17 @@ nav input {
 
 section {
     width: 80%;
+    margin-top: 25px;
 }
 
 
+.contact{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 50px;
+}
 
 
 
