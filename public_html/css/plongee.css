@@ -1,0 +1,29 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 6 juin 2020, 12:01:13
+    Author     : antoine.roziere
+*/
+
+#plongee {
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-wrap: wrap; /* Les éléments flexibles sont disposés sur plusieurs lignes */
+    justify-content: flex-start; /* Les éléments sont répartis équitablement sur la ligne */
+    margin-bottom: 45px; /* Marge inférieure */
+}
+
+#seances article {
+    width: 200px; /* Largeur de l'article */
+    height: 600px; /* Hauteur de l'article */
+    margin: 10px; /* Marges extérieures */
+    padding: 5px; /* Marges intérieures */
+    border: white thin solid; /* Bordure blanche */
+    position: relative; /* Position relative */
+}
+
+seances article img {
+    margin-left: 6px; /* Marge gauche */
+}
