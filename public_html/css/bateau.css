@@ -28,3 +28,52 @@ and open the template in the editor.
     height: 160px;
     }
 }
+
+body {
+    margin-bottom: 55px; /* Marge inférieure */
+    
+    display: flex; /* Ce conteneur est "flexible" */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%;
+}
+
+.stockko{
+    font-weight: bold;
+}
+
+.prix{
+    text-decoration : underline;
+}
+
+#location_bateau{
+    width: 80%;
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont mis côte à côte */    
+}
+
+#location_bateau article {
+    float: left;
+    margin-top: 20px;
+    flex: 1;
+    padding: 5px; /* Marges intérieures */
+    border: white thin solid; /* Bordure blanche */
+}
+
+#location_bateau article img {
+    float: left;
+    margin-right: 10px;
+}
+
+@media screen and (max-width:768px) {
+    .image {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 768px;
+    height: 160px;
+    }
+    
+    #location_bateau article img {display: none;}
+    
+}
