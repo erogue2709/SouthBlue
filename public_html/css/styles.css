@@ -44,7 +44,7 @@ nav ul {
     display: flex; /* Ce conteneur est "flexible" */
     flex-direction: row; /* Les éléments sont mis côte à côte */
     justify-content: space-between; /* Les éléments sont répartis équitablement */
-    background-color: #D3D3D3; /* Couleur du fond */
+    background-color: whitesmoke; /* Couleur du fond */
 }
 nav ul li {
     display: flex; /* Ce conteneur est "flexible" */
@@ -59,17 +59,22 @@ nav ul li a {
     color: #007FFF; /* Couleur du texte */
 }
 nav ul li:hover {
-    background-color: #C0C0C0; /* Couleur du fond au passage de la souris */
+    background-color: #D3D3D3; /* Couleur du fond au passage de la souris */
 }
 
 nav input {
     display: none;
 }
 
-section {
+.menu{
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont empilés */
+    width: 100%;
+}
+
+.mainText {
     width: 80%;
     margin-top: 25px;
-    border: 1px solid black;
     border-radius: 10px;
     background-color: #e0e0e0;
 }
@@ -93,78 +98,10 @@ section article {
 }
 
 
-
-
-
-#principal {
-    margin-top: 10px; /* Marge supérieure */
-    display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: row; /* Les éléments sont mis côte à côte */
-    text-align: justify; /* Alignement du texte : justifié */
-}
-
-#principal article img {
-    float: left; /* Mise en élément "flottant" contre lequel on peut venir se poser */
-    margin-right: 10px; /* Marge de droite */
-}
-#principal article p {
-    padding-top: 16px; /* Marge intérieure supérieure */
-}
-
-#thematique {
-    display: flex; /* Ce conteneur est "flexible" */
-    flex-wrap: wrap; /* Les éléments sont placés sur plusieurs lignes */
-    margin-bottom: 45px; /* Marge basse (correspond à la hauteur du footer + 10px) */
-}
-
 h1 {
     color: #ff6811; /* Couleur du texte */
     text-align: center; /* Le texte est centré */
     font-size: xx-large; /* Le texte est grossi en XXL */
-}
-
-#thematique h1 {
-    width: 100%; /* Le titre occupe toute la largeur */ 
-    margin-bottom: 10px; /* Marge basse */
-}
-
-#thematique article {
-    flex: 1; /* flex-grow: 1 et flex-shrink:1 = Chaque élément occupe l'espace idéal (le + et le - à la fois) */
-    height: 256px; /* Hauteur */
-    border: transparent thin solid; /* Bordure transparente */
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-}
-
-/* Définition de la police "Nordic" */
-@font-face{ 
-    font-family: "Nordic";
-    src: url('polices/Nordic.ttf') format("truetype");
-}
-
-#thematique a {
-    font-family: 'Nordic'; /* Police à utiliser */
-    font-size: xx-large; /* Le texte est grossi en XXL */
-    color: black; /* Couleur du texte */
-
-}
-
-#gauche:hover, #milieu:hover, #droite:hover {
-    border: black thin solid; /* Bordure au passage de la souris */
-    border-radius: 10px; /* Bords arrondis au passage de la souris */
-    background-color: #ededed; /* Fond au passage de la souris */
-}
-
-#gauche {
-    background: transparent url('images/casqueroute.png') no-repeat center 10px; /* Fond */
-}
-
-#milieu {
-    background: transparent url('images/casquecross.png') no-repeat center 0; /* Fond */
-}
-
-#droite {
-    background: transparent url('images/casquepiste.png') no-repeat center 10px; /* Fond */
 }
 
 footer {
@@ -188,18 +125,9 @@ footer p {
 
 /* Smartphone */
 @media screen and (max-width:768px) {
-    body {
-        font-size: large;
-    }
-
+    
     header, section {
         width: auto; /* Suppression de la largeur définie */
-    }
-
-    header img {
-        width: 100%; /* Bannière sur toute la largeur */
-        background-color: black; /* Extension artificielle noire */
-        padding-bottom: 15px; /* du bas de l'image sur 15 pixels */
     }
 
     nav {
@@ -217,7 +145,7 @@ footer p {
         position: absolute;
         margin: -39px 0 0 -60px;
         padding: 50px 10px 10px 60px;
-        background: black;
+        background: whitesmoke;
         list-style-type: none;
         transform: translate(-100%, 0);
         transition: transform 0.5s ease;
@@ -244,7 +172,7 @@ footer p {
         height: 5px;
         margin-bottom: 5px;
         position: relative;
-        background: black;
+        background: #007FFF;
         border-radius: 3px;
         z-index: 1; /* En dessous de l'input défini avant */
         /*transform-origin: 4px 0px; /* Modification du centre pour rotation */
@@ -253,7 +181,7 @@ footer p {
 
     /* Toutes les barres en blanc */
     nav input:checked ~ span {
-        background: white;
+        background: #007FFF;
     }
 
     /* On fait pivoter la première de 45° (sens horaire) */
@@ -276,35 +204,16 @@ footer p {
         transform: none;
     }
 
-    #principal {
-        flex-direction: column;
-        margin: 0 10px;
-    }
-
-    #principal article img {
-        float: left;
-        margin-right: 10px;
-        margin-top: 15px;
-    }
-
-    #principal aside {display: none;}
-
-    h1 {
-        font-size: x-large;
-    }
-
-    #thematique {   
-        flex-direction: column;
-        margin-top: 15px;
-    }
-
-    #gauche, #milieu, #droite {
-        background-size: contain; 
-    }
-
     footer {
         display: none;
     }
+    
+    .image {
+    background-size: cover;
+    background-position: 50%;
+    width: 768px;   /*1920 max*/
+    height: 160px;     /*904 max*/
+}
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {
