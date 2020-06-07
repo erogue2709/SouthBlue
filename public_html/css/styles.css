@@ -28,17 +28,6 @@ header {
     flex-direction: column; /* Les éléments sont empilés */
 }
 
-/*on redimensionne la banniere*/
-.image {
-    background-size: cover;
-    background-position: 50%;
-    width: 1920px;   /*1920 max*/
-    height: 400px;     /*904 max*/
-}
-
-.image img {
-    display: none;
-}
 
 nav ul {
     display: flex; /* Ce conteneur est "flexible" */
@@ -64,6 +53,10 @@ nav ul li:hover {
 
 nav input {
     display: none;
+}
+
+.actif{
+    background-color:#D3D3D3; 
 }
 
 .menu{
@@ -125,6 +118,7 @@ footer p {
 
 /* Smartphone */
 @media screen and (max-width:768px) {
+    
     
     header, section {
         width: auto; /* Suppression de la largeur définie */
@@ -208,12 +202,6 @@ footer p {
         display: none;
     }
     
-    .image {
-    background-size: cover;
-    background-position: 50%;
-    width: 768px;   /*1920 max*/
-    height: 160px;     /*904 max*/
-}
 }
 
 @media screen and (min-width:576px) and (max-width:768px) {

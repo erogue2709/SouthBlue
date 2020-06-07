@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 7 juin 2020, 12:39:48
+    Author     : erogue
+*/
+
+/*on redimensionne la banniere*/
+.image {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 1920px;   /*1920 max*/
+    height: 400px;     /*904 max*/
+}
+
+.image img {
+    display: none;
+}
+
+@media screen and (max-width:768px) {
+    .image {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 768px;   /*1920 max*/
+    height: 160px;     /*904 max*/
+    }
+}

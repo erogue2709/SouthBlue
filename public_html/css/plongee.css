@@ -7,6 +7,17 @@ and open the template in the editor.
     Created on : 6 juin 2020, 12:01:13
     Author     : antoine.roziere
 */
+/*on redimensionne la banniere*/
+.image {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 1920px;   /*1920 max*/
+    height: 400px;     /*904 max*/
+}
+
+.image img {
+    display: none;
+}
 
 #plongee {
     display: flex; /* Ce conteneur est "flexible" */
@@ -26,4 +37,13 @@ and open the template in the editor.
 
 seances article img {
     margin-left: 6px; /* Marge gauche */
+}
+
+@media screen and (max-width:768px) {
+    .image {
+    background-size: cover;
+    background-position: 50% 50%;
+    width: 768px;   /*1920 max*/
+    height: 160px;     /*904 max*/
+    }
 }
