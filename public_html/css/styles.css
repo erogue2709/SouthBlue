@@ -1,54 +1,54 @@
 * {
-    font-family: 'CenturyGothicRegular'; /* Police par défaut */
-    box-sizing: border-box; /* Les tailles de conteneurs incluent bordures et 
-                               remplissages */
-    margin: 0; /* Mise à 0 des marges externes */
-    padding: 0; /* Mise à 0 des marges internes */
-    text-decoration: none; /* Suppression de la mise en forme habituelle des liens 
-                             (soulignement) */
+    font-family: 'CenturyGothicRegular';
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
-/* Définition de la police "Montserrat" */
 @font-face{ 
     font-family: "CenturyGothicRegular";
     src: url('polices/CenturyGothicRegular.ttf') format("truetype");
 }
 
+h1 {
+    margin-top: 25px;
+}
+
 body {
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    flex-direction: column; /* Les éléments sont empilés */
-    align-items: center; /* Les éléments portés sont centrés à la verticale */
-    width: 100%; /* La page occupe toute la largeur */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     background-color: #D3D3D3;
 }
 
 header {
-    display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: column; /* Les éléments sont empilés */
+    display: flex;
+    flex-direction: column;
 }
 
 
 nav ul {
-    display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: row; /* Les éléments sont mis côte à côte */
-    justify-content: space-between; /* Les éléments sont répartis équitablement */
-    background-color: whitesmoke; /* Couleur du fond */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: whitesmoke;
 }
 nav ul li {
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    list-style-type: none; /* Cette liste n'a pas de puce */
-    /*font-size: x-large; /* Le texte est grossi en XL */
-    flex-grow: 1; /* L'espace occupé est élargie */
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    flex-grow: 1;
 }
 
 nav ul li a {
-    padding: 10px; /* Marge intérieure */
-    color: #007FFF; /* Couleur du texte */
+    padding: 10px;
+    color: #007FFF;
 }
 nav ul li:hover {
-    background-color: #D3D3D3; /* Couleur du fond au passage de la souris */
+    background-color: #D3D3D3;
 }
 
 nav input {
@@ -60,8 +60,8 @@ nav input {
 }
 
 .menu{
-    display: flex; /* Ce conteneur est "flexible" */
-    flex-direction: column; /* Les éléments sont empilés */
+    display: flex;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -71,57 +71,30 @@ nav input {
     border-radius: 10px;
     background-color: #e0e0e0;
 }
-section article {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-right: 5px;
-    margin-left: 5px;
-}
-
-.contact{
-    width: 30%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-bottom: 50px;
-}
-
-.row{
-    margin-top: 30px;
-}
-
-
-h1 {
-    color: #ff6811; /* Couleur du texte */
-    text-align: center; /* Le texte est centré */
-    font-size: xx-large; /* Le texte est grossi en XXL */
-}
 
 footer {
-    display: flex; /* Ce conteneur est "flexible" */
-    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
-    align-items: center; /* Les éléments portés sont centrés à la verticale */
-    position: fixed; /* Le conteneur est fixé en fonction de ses coordonnées (à 0px du bas) */
-    bottom: 0px; /* Bas */
-    height: 35px; /* Hauteur */
-    width: 100%; /* Le pied de page occupe toute la largeur */ 
-    background-color:#2d2d2d; /* Couleur de fond */
-    color: #bbb; /* Couleur du texte */
-    text-align:center; /* Texte centré */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    height: 35px;
+    width: 100%;
+    background-color:#2d2d2d;
+    color: #bbb;
+    text-align:center;
 }
 
 footer p {
     font-size: small;
 }
 
-
-
 /* Smartphone */
 @media screen and (max-width:768px) {
     
     
     header, section {
-        width: auto; /* Suppression de la largeur définie */
+        width: auto;
     }
 
     nav {
@@ -172,8 +145,6 @@ footer p {
         /*transform-origin: 4px 0px; /* Modification du centre pour rotation */
         transition: transform 0.5s ease, background 0.5s ease, opacity 0.55s ease;
     }
-
-    /* Toutes les barres en blanc */
     nav input:checked ~ span {
         background: #007FFF;
     }
@@ -202,10 +173,4 @@ footer p {
         display: none;
     }
     
-}
-
-@media screen and (min-width:576px) and (max-width:768px) {
-    #thematique {
-        flex-direction: row; /* Sur tablette, on met les casques de la page d'accueil côte à côte */
-    }
 }

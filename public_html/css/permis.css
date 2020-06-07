@@ -12,8 +12,8 @@ and open the template in the editor.
 .image {
     background-size: cover;
     background-position: 50% 50%;
-    width: 1920px;   /*1920 max*/
-    height: 400px;     /*904 max*/
+    width: 1920px;
+    height: 400px;
 }
 
 .image img {
@@ -24,7 +24,7 @@ and open the template in the editor.
     .image {
     background-size: cover;
     background-position: 50% 50%;
-    width: 768px;   /*1920 max*/
-    height: 160px;     /*904 max*/
+    width: 768px;
+    height: 160px;
     }
 }

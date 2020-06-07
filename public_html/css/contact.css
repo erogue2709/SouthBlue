@@ -11,20 +11,61 @@ and open the template in the editor.
 /*on redimensionne la banniere*/
 .image {
     background-size: cover;
-    background-position: 50% 50%;
-    width: 1920px;   /*1920 max*/
-    height: 400px;     /*904 max*/
+    background-position: 50% 60%;
+    width: 1920px;
+    height: 400px;
 }
 
 .image img {
     display: none;
 }
 
+.row{
+    margin-top: 20px;
+}
+
+.contact{
+    margin-top: 20px;
+    padding-top: 25px;
+    border-radius: 10px;
+    background-color: #e0e0e0;
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+    text-align:center;
+    flex-direction: column;
+}
+
+.carte{
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    width: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    
+    margin-top: 20px;
+    margin-bottom: 55px;
+    
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.contactTitre {
+    font-size: large;
+}
+
 @media screen and (max-width:768px) {
     .image {
     background-size: cover;
-    background-position: 50% 50%;
-    width: 768px;   /*1920 max*/
-    height: 160px;     /*904 max*/
+    background-position: 50% 60%;
+    width: 768px;
+    height: 160px;
     }
 }

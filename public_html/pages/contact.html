@@ -13,6 +13,7 @@ and open the template in the editor.
         <link href="../css/contact.css" rel="stylesheet" type="text/css"/>
         <meta name="author" content="Ilhem Ounes, Antoine Roziere, Maxence Decourriere">
         <meta name="description" content="Matériel de plongée et location de bateaux. Tous les bon spots à votre disposition. Amusez-vous !">
+        <script src="../js/contact.js" type="text/javascript"></script>
     </head>
     <body>
         <header>
@@ -35,12 +36,16 @@ and open the template in the editor.
             </nav>
         </section>
         
+        <h1>Contacter South Blue</h1><br/>
         <section class = "contact">
+            <div class="contactTitre">
+                <label>Envoyer un message</label><br/>
+            </div>
             <div id="after_submit"></div>
             <form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
               <div class="row">
                 <label class="required" for="name">Nom:</label><br />
-                <input id="name" class="input" name="name" type="text" value="" size="60" /><br />
+                <input id="name" class="input" name="name" type="text" value="" size="60" pattern="^[a-zA-ZáàâäãåçéèêëíìîïñóòôöõúùûüýÿæœÁÀÂÄÃÅÇÉÈÊËÍÌÎÏÑÓÒÔÖÕÚÙÛÜÝŸÆŒ\s\-]+$"/><br />
                 <span id="name_validation" class="error_message"></span>
               </div>
               <div class="row">
@@ -55,6 +60,13 @@ and open the template in the editor.
               </div>
             <input id="submit_button" type="submit" value="Envoyer" />
         </form>
+        </section>
+        
+        <section class = "carte">
+            <label>Nous retrouver</label><br/>
+            <div>
+                <img src="https://open.mapquestapi.com/staticmap/v5/map?key=bZNXQieHCY65xphzmzAPLTH1EQSKUDq0&locations=Toulon,Var,France" alt="Carte OpenStreetMap statique pour retrouver SouthBlue">
+            </div>
         </section>
         <footer>
             <p>SouthBlue - Projet WebDev ISEN 2020<p>
