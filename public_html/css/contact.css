@@ -51,10 +51,7 @@ and open the template in the editor.
     margin-top: 20px;
     margin-bottom: 55px;
     
-    padding-top: 25px;
-    padding-bottom: 25px;
-    padding-right: 25px;
-    padding-left: 25px;
+    padding: 25px;
 }
 
 .contactTitre {

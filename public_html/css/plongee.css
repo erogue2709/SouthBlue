@@ -19,24 +19,41 @@ and open the template in the editor.
     display: none;
 }
 
-#plongee {
+body {
+    margin-bottom: 55px; /* Marge inférieure */
+    
     display: flex; /* Ce conteneur est "flexible" */
-    flex-wrap: wrap; /* Les éléments flexibles sont disposés sur plusieurs lignes */
-    justify-content: flex-start; /* Les éléments sont répartis équitablement sur la ligne */
-    margin-bottom: 45px; /* Marge inférieure */
+    justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
+    flex-direction: column; /* Les éléments sont empilés */
+    align-items: center; /* Les éléments portés sont centrés à la verticale */
+    width: 100%;
+}
+
+.stockko{
+    font-weight: bold;
+}
+
+.prix{
+    text-decoration : underline;
+}
+
+#seances{
+    width: 80%;
+    display: flex; /* Ce conteneur est "flexible" */
+    flex-direction: column; /* Les éléments sont mis côte à côte */    
 }
 
 #seances article {
-    width: 200px; /* Largeur de l'article */
-    height: 600px; /* Hauteur de l'article */
-    margin: 10px; /* Marges extérieures */
+    float: left;
+    margin-top: 20px;
+    flex: 1;
     padding: 5px; /* Marges intérieures */
     border: white thin solid; /* Bordure blanche */
-    position: relative; /* Position relative */
 }
 
-seances article img {
-    margin-left: 6px; /* Marge gauche */
+#seances article img {
+    float: left;
+    margin-right: 10px;
 }
 
 @media screen and (max-width:768px) {
@@ -46,4 +63,7 @@ seances article img {
     width: 768px;
     height: 160px;
     }
+    
+    #seances article img {display: none;}
+    
 }
